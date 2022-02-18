@@ -1,0 +1,31 @@
+.need
+   background: $secBg
+   color: #fff
+   &__top
+      margin-bottom: 20px
+   &__title
+      margin-bottom: 12px
+      color: #fff
+   &__order
+      color: rgba(#fff, 0.6)
+
+@media screen and (min-width: 768px)
+   .need
+      &__top
+         margin-bottom: 35px
+
+@media screen and (min-width: 1280px)
+   .need
+      &__inner
+         display: flex
+         justify-content: space-between
+         align-items: flex-start
+      &__form
+         width: 100%
+         max-width: 687px
+
+@media screen and (min-width: 1900px)
+   .need
+      &__form
+         width: 100%
+         max-width: 930px

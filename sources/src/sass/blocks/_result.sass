@@ -1,0 +1,49 @@
+.result
+   background: $secBg
+   color: #fff
+   &__header
+      margin-bottom: 24px
+   &__title
+      color: #fff
+   .about
+      &__item
+         margin-bottom: 12px
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: 768px)
+   .result
+      &__inner
+         display: flex
+         align-items: flex-start
+         justify-content: space-between
+      &__title
+         max-width: 264px
+      &__info
+         width: 100%
+         max-width: 360px
+
+@media screen and (min-width: 1000px)
+   .result
+      &__title
+         max-width: 340px
+      &__info
+         max-width: 540px
+
+@media screen and (min-width: 1440px)
+   .result
+      &__title
+         max-width: 380px
+      &__inner
+         max-width: 1292px
+         margin: 0
+      .about
+         &__list
+            padding-bottom: 0
+
+@media screen and (min-width: 1600px)
+   .result
+      padding-bottom: 90px
+      &__inner
+         max-width: 1534px
+         margin-left: calc((100% - 1920px)/2)

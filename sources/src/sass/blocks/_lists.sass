@@ -25,3 +25,29 @@
          width: 24px
          height: 24px
          background: url('../images/icons/check.svg') no-repeat center / contain
+
+.desc
+   &__item
+      padding-left: 12px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: 0
+         top: 6px
+         width: 4px
+         height: 4px
+         background: $decor
+         border-radius: 50%
+
+.description
+   .about
+      &__title
+         margin-bottom: 18px
+      &__item
+         margin-bottom: 12px
+
+@media screen and (min-width: 1900px)
+   .description
+      &.about
+         padding-bottom: 80px

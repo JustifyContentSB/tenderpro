@@ -1,0 +1,90 @@
+extends base/_layout
+block head
+    title Маркетинг закупок
+block page
+    section.primary.primary--marketing
+        .primary__bg.background-image
+            picture
+                source(srcset="images/primary/primary-2-big.webp" media="(min-width: 1600px)" type="image/webp")
+                source(srcset="images/primary/primary-2-big.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                source(srcset="images/primary/primary-2-desk.webp" media="(min-width: 1000px)" type="image/webp")
+                source(srcset="images/primary/primary-2-desk.jpg" media="(min-width: 1000px)" type="image/jpeg")
+                source(srcset="images/primary/primary-2-tab.webp" media="(min-width: 768px)" type="image/webp")
+                source(srcset="images/primary/primary-2-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                source(srcset="images/primary/primary-2-mob.webp" type="image/webp")
+                img(src="images/primary/primary-2-mob.jpg" alt="Фоновое изображение" width="320" height="568")
+        .primary__inner
+            .breadcrumbs.primary__breadcrumbs.container
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a(href="#") Главная
+                    li.breadcrumbs__item
+                        a(href="#") Маркетинг закупок
+            .primary__info.sec.container
+                h1.main-title.primary__title Маркетинг закупок
+                p.primary__text.
+                    Сложные закупки крупных компаний требуют особого подхода к организации торгов. Привлечение потенциальных поставщиков к открытой закупке не ограничивается автоматической рассылкой приглашений.
+                a.btn.primary__btn(href="#") заказать услугу
+
+    section.about.sec.description
+        .about__inner.container
+            h2.title.about__title Описание
+            .about__info
+                ul.about__list.desc
+                    li.about__item.desc__item.
+                        Исследование конъюнктуры рынка
+                    li.about__item.desc__item.
+                        Поиск потенциально заинтересованных в закупках компаний
+                    li.about__item.desc__item.
+                        Адресное оповещение о возможностях участвовать в закупке
+                    li.about__item.desc__item.
+                        Приглашение к участию в конкурентных закупках
+                    li.about__item.desc__item.
+                        Сбор обратной связи от участников рынка
+                    li.about__item.desc__item.
+                        Предоставление сводного отчета
+
+    section.result.sec
+        .result__inner.container
+            header.result__header
+                h2.title.result__title Результат маркетинга закупок
+            .result__info
+                ul.about__list.about
+                    li.about__item.decision__item Актуальная и независимая информация о ситуации на рынке
+                    li.about__item.decision__item Расширение пула потенциальных поставщиков по товарам или услугам
+                    li.about__item.decision__item Увеличение количества участников закупочной процедуры
+                    li.about__item.decision__item Усиление конкуренции в торговых процедурах
+
+    section.cite.sec
+        .cite__inner.container
+            .cite__info
+                p.cite__text.
+                    Мы в своей работе постоянно ищем оптимальные решения, которые могли бы снять головную боль клиентов. Анализ большого объема информации по закупкам и постоянный мониторинг состояния отрасли в целом привели к пониманию необходимости перезагрузки всей системы взаимоотношений «закупщик – поставщик». Именно в этой цепочке ЭТП может выступить как структура, позволяющая создать эффективные коммуникации между организациями и людьми и решить задачи, которые самостоятельно решаются с трудом или не решаются вовсе. У площадок для этого сегодня существуют как технологические, так и инфраструктурные ресурсы
+                .cite__person
+                    .cite__person-img
+                        img(src="images/cite/elena.jpg", alt="Елена Астафьева" width="44" height="44")
+                    .cite__person-info
+                        p.cite__person-name Елена Астафьева
+                        p.cite__person-pro Руководитель отдела маркетинга
+
+    section.need.sec
+        .need__inner.container
+            .need__top
+                h2.title.need__title что для этого нужно?
+                p.need__order Предоставьте данные и оставьте заявку
+            form.form.need__form(action="#")
+                .form__top
+                    label.form__label
+                        span.form__label-title Имя:
+                        input.form__label-field(type="text")
+                    label.form__label
+                        span.form__label-title Телефон:
+                        input.form__label-field(type="text")
+                label.form__label.form__textarea
+                        span.form__label-title Вопрос:
+                        textarea.form__label-field.form__textarea-field(type="text")
+                label.form__agree
+                    input(type="checkbox")
+                    span.form__agree-checkbox
+                    span Я соглашаюсь с #[a(href="#") политикой конфиденциальности]
+                button.form__btn Отправить

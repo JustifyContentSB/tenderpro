@@ -1,0 +1,73 @@
+.cite
+   &__info
+      padding-left: 48px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: 0
+         top: 0
+         width: 40px
+         height: 40px
+         background: url('../images/icons/cite.svg') no-repeat center / 100% 100%
+   &__text
+      margin-bottom: 18px
+      padding-top: 10px
+   &__person
+      display: flex
+      &-info
+         padding-left: 10px
+      &-img
+         width: 44px
+         min-width: 44px
+         height: 44px
+         margin-right: 2px
+         overflow: hidden
+         border-radius: 50%
+      &-name
+         margin-bottom: 4px
+         color: $accent
+         font-weight: 500
+      &-pro
+         font-size: 14px
+         line-height: 114%
+         color: #969595
+
+@media screen and (min-width: 768px)
+   .cite
+      padding-bottom: 80px
+      &__text
+         margin-bottom: 26px
+         font-size: 20px
+         line-height: 160%
+      &__info
+         padding-left: 72px
+         padding-right: 60px
+         &::before
+            width: 56px
+            height: 56px
+
+@media screen and (min-width: 1280px)
+   .cite
+      &__info
+         width: 100%
+         max-width: 850px
+         margin: 0 auto
+
+@media screen and (min-width: 1440px)
+   .cite
+      padding: 120px 0 80px
+      &__info
+         max-width: 937px
+         padding-left: 100px
+         padding-right: 116px
+         &::before
+            width: 64px
+            height: 64px
+
+@media screen and (min-width: 1900px)
+   .cite
+      &__info
+         max-width: 1160px
+         padding-left: 105px
+         padding-right: 94px
