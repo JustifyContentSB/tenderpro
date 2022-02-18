@@ -1,0 +1,91 @@
+.reviews
+   padding: 48px 0 18px
+   background: #FBFBFB
+   &__header
+      margin-bottom: 31px
+      display: flex
+      align-items: center
+      justify-content: space-between
+   &__title
+      font-size: 30px
+   &__slider
+      padding: 0 16px
+      padding-bottom: 0
+      position: relative
+      overflow: hidden
+   &__slide
+      padding-bottom: 34px
+   &__img
+      width: 80px
+      min-height: 80px
+      margin-bottom: 12px
+      padding: 8px
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 1px solid #F3F3F3
+      background: #fff
+   &__person
+      margin-bottom: 32px
+      &-name
+         margin-bottom: 4px
+         font-weight: 500
+      &-pro
+         color: #969595
+   &__text
+      p
+         margin-bottom: 12px
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: 768px)
+   .reviews
+      padding-top: 60px
+      padding-bottom: 40px
+      &__slider
+         padding: 0 24px
+      &__slide
+         width: 640px
+         padding-bottom: 68px
+         display: flex
+         align-items: flex-start
+      &__img
+         width: 136px
+         min-width: 136px
+         height: 136px
+         margin-right: 24px
+      &__person
+         max-width: 330px
+         margin-bottom: 15px
+
+@media screen and (min-width: 1280px)
+   .reviews
+      &__title
+         font-size: 32px
+
+@media screen and (min-width: 1440px)
+   .reviews
+      padding-top: 80px
+      padding-bottom: 48px
+      &__header
+         margin-bottom: 40px
+      &__title
+         font-size: 36px
+         line-height: 122%
+      &__slider
+         padding: 0 32px
+         max-width: 1920px
+      &__slide
+         padding-bottom: 52px
+      &__img
+         width: 145px
+         min-width: 145px
+         height: 145px
+         margin-right: 16px
+
+@media screen and (min-width: 1900px)
+   .reviews
+      &__slider
+         width: 100%
+         max-width: 1920px
+         margin: 0 auto

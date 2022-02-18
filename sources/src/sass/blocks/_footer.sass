@@ -1,0 +1,193 @@
+.footer
+   padding-top: 44px
+   padding-bottom: 24px
+   overflow: hidden
+   &__top
+      width: 100%
+      max-width: 400px
+      margin-bottom: 6px
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 24px 0
+   &__contacts
+      font-weight: bold
+      font-family: $robotoCond
+      color: $decor
+      text-transform: uppercase
+      li
+         margin-bottom: 8px
+         &:last-child
+            margin-bottom: 0
+   &__nav
+      grid-column-start: span 2
+      font-family: $robotoCond
+      font-weight: bold
+      font-size: 12px
+      line-height: 167%
+      text-transform: uppercase
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 28px 0
+      &-list
+         li
+            margin-bottom: 8px
+            &:last-child
+               margin-bottom: 0
+         a
+            position: relative
+            &::after
+               content: ''
+               position: absolute
+               width: 0
+               bottom: 0
+               left: auto
+               right: 0
+               height: 1px
+               background: $accent
+               transition: width .2s ease
+            &:hover,
+            &:focus
+               &::after
+                  width: 100%
+                  right: auto
+                  left: 0
+   &__user
+      color: #969595
+      li
+         margin-bottom: 8px
+         &:last-child
+            margin-bottom: 0
+      a
+         transition: color .2s ease
+         &:hover,
+         &:focus
+            color: $accent
+            text-decoration: underline
+   &__address
+      padding-top: 20px
+      grid-column-start: span 2
+      font-style: normal
+      font-size: 12px
+      line-height: 142%
+      color: #969595
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: -16px
+         right: -16px
+         top: 0
+         height: 1px
+         background: #F3F3F3
+   &__bottom
+      font-size: 12px
+      line-height: 142%
+      color: #969595
+   &__docs
+      display: grid
+      grid-gap: 8px 0
+      a
+         &:hover,
+         &:focus
+            text-decoration: underline
+
+@media screen and (min-width: 768px)
+   .footer
+      padding-top: 58px
+      &__top
+         margin-bottom: 38px
+         max-width: 100%
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 50px 10px
+      &__logo
+         order: -2
+         width: 119px
+         img
+            width: 100%
+      &__nav
+         order: -1
+         grid-row-start: 1
+         grid-row-end: 3
+         grid-column-start: 2
+         grid-column-end: 4
+         grid-gap: 20px 0
+      &__user
+         grid-row-start: 2
+         grid-row-end: 2
+      &__address
+         padding-top: 15px
+         grid-row-start: 2
+         grid-row-end: 3
+         grid-column-start: 4
+         grid-column-end: 4
+         font-size: 14px
+         line-height: 143%
+         &::before
+            display: none
+      &__contacts
+         font-size: 16px
+         line-height: 150%
+      &__user
+         font-size: 14px
+         br
+            display: none
+      &__bottom
+         padding-top: 20px
+         font-size: 14px
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -24px
+            right: -24px
+            height: 1px
+            background: #F3F3F3
+      &__docs
+         display: flex
+         justify-content: space-between
+         flex-direction: row-reverse
+
+@media screen and (min-width: 1280px)
+   .footer
+      &__bottom
+         padding-left: 25%
+      &__nav
+         max-width: 500px
+
+@media screen and (min-width: 1440px)
+   .footer
+      padding-top: 65px
+      &__logo
+         width: 169px
+      &__nav
+         max-width: 358px
+         padding-top: 12px
+         font-size: 14px
+         line-height: 170%
+         margin-left: 159px
+         grid-gap: 40px 0
+      &__contacts
+         padding-top: 8px
+         font-size: 20px
+         line-height: 140%
+      &__top
+         margin-bottom: 62px
+         grid-gap: 80px 23px
+      &__address
+         max-width: 255px
+         display: flex
+         align-items: flex-end
+      &__bottom
+         padding-left: 37%
+      &__docs
+         padding-right: 14%
+
+@media screen and (min-width: 1600px)
+   .footer
+      padding-top: 76px
+      &__nav
+         max-width: 480px
+         margin-left: 220px
+      &__docs
+         padding-right: 19%

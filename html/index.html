@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner container">
+          <button class="header__burger header__btn"><span class="visually-hidden">Открыть навигационное меню</span><img src="images/icons/menu.svg" alt="иконка меню" width="20" height="20"></button><a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="100" height="24"></a>
+          <form class="header__form" action="#">
+            <input class="header__form-field" type="text" placeholder="Искать конкурсы, товары, компании">
+            <button class="header__form-btn header__btn">
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-search"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a href="#">о компании</a></li>
+              <li><a href="#">справка</a></li>
+              <li><a href="#">тарифы</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul>
+          </nav><a class="header__apps header__btn" href="#"><span class="visually-hidden">Открыть меню приложений</span><img src="images/icons/apps.svg" alt="иконка приложений" width="20" height="20"></a>
+          <ul class="header__user">
+            <li class="header__user-item"><a class="header__user-login" href="#">Войти</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="primary">
+          <div class="primary__bg background-image">
+            <picture>
+              <source srcset="images/primary/primary-1-big.webp" media="(min-width: 1600px)" type="image/webp">
+              <source srcset="images/primary/primary-1-big.jpg" media="(min-width: 1600px)" type="image/jpeg">
+              <source srcset="images/primary/primary-1-desk.webp" media="(min-width: 1000px)" type="image/webp">
+              <source srcset="images/primary/primary-1-desk.jpg" media="(min-width: 1000px)" type="image/jpeg">
+              <source srcset="images/primary/primary-1-tab.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="images/primary/primary-1-tab.jpg" media="(min-width: 768px)" type="image/jpeg">
+              <source srcset="images/primary/primary-1-mob.webp" type="image/webp"><img src="images/primary/primary-1-mob.jpg" alt="Фоновое изображение" width="320" height="568">
+            </picture>
+          </div>
+          <div class="primary__inner">
+            <div class="breadcrumbs primary__breadcrumbs container">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">NSI</a></li>
+              </ul>
+            </div>
+            <div class="primary__info sec container">
+              <h1 class="main-title primary__title">Качество основных данных под контролем</h1><a class="btn primary__btn" href="#">Получить презентацию</a>
+            </div>
+          </div>
+        </section>
+        <section class="about sec">
+          <div class="about__inner container">
+            <h2 class="title about__title">Проблема</h2>
+            <div class="about__info">
+              <h3 class="sub-title about__sub-title">Некачественные данные</h3>
+              <ul class="about__list problem">
+                <li class="about__item problem__item">Вызывают несогласованность при работе в различных информационных системах</li>
+                <li class="about__item problem__item">Ведут к увеличению складов и росту неликвидов</li>
+                <li class="about__item problem__item">Требуют многократный ввод одинаковой информации</li>
+                <li class="about__item problem__item">Повышают транзакционные издержки на выверку данных</li>
+                <li class="about__item problem__item">Не позволяют консолидировать закупки</li>
+                <li class="about__item problem__item">Препятствуют работе с контрагентами</li>
+                <li class="about__item problem__item">
+                  Уменьшают достоверность аналитики и отчетности
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="catalog sec">
+          <div class="catalog__inner container">
+            <header class="catalog__header">
+              <h2 class="title catalog__title">Каталогизация</h2>
+            </header>
+            <div class="catalog__info">
+              <p>Каталогизация материально-технических ресурсов (МТР) — совокупность процессов (идентификация, описание, классификация, унификация, кодификация), обеспечивающих единообразное и однозначное описание МТР.</p>
+              <p>
+                Каталогизация продукции является эффективным способом упорядочения процессов материально- технического снабжения и сокращения затрат на приобретение продукции, позволяет исключить закупку дублирующей продукции и необоснованное завышение цен.
+                
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="about sec">
+          <div class="about__inner container">
+            <h2 class="title about__title">Решение</h2>
+            <div class="about__info">
+              <h3 class="sub-title about__sub-title">Центр каталогизации ГК ТендерПро готов создать каталог продукции предприятия с нуля или обработать уже имеющийся справочник</h3>
+              <ul class="about__list decision">
+                <li class="about__item decision__item">Разработка методики нормализации данных индивидуально по требованиям заказчика</li>
+                <li class="about__item decision__item">Аутсорсинг ведения справочника</li>
+                <li class="about__item decision__item">Разработка корпоративных классификаторов продукции, услуг</li>
+                <li class="about__item decision__item">Выполнение работ по нормализации и классификации справочника заказчика</li>
+                <li class="about__item decision__item">Разработка шаблонов описания МТР</li>
+                <li class="about__item decision__item">
+                  Перевод на английский язык наименований позиций, а так же их свойств и значений
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="features__inner">
+            <header class="features__header sec container">
+              <h2 class="title">наш подход</h2>
+            </header>
+            <ul class="features__list">
+              <li class="features__item container"><img class="features__icon" src="images/features/features-1.svg" alt="иконка" width="24" height="24">
+                <p class="features__text">Высокое качество, сжатые сроки, приемлемая цена</p>
+              </li>
+              <li class="features__item container"><img class="features__icon" src="images/features/features-2.svg" alt="иконка" width="24" height="24">
+                <p class="features__text">Создание методик работы индивидуально под ваш проект</p>
+              </li>
+              <li class="features__item container"><img class="features__icon" src="images/features/features-3.svg" alt="иконка" width="24" height="24">
+                <p class="features__text">Профессионализм <br> и богатый опыт</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project sec">
+          <div class="project__inner">
+            <header class="project__header container">
+              <h2 class="title project__title">наши проекты</h2>
+              <div class="swiper-btns">
+                <button class="swiper-button-prev project__prev"><span class="visually-hidden">Предыдущий слайд</span>
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-prev"></use>
+                  </svg>
+                </button>
+                <button class="swiper-button-next project__next"><span class="visually-hidden">Следующий слайд</span>
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </header>
+            <div class="project__slider">
+              <div class="swiper-container project__slider-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project__slide"><img src="images/project/project-1.png" alt="проект" width="91" height="23"></div>
+                  <div class="swiper-slide project__slide"><img src="images/project/project-2.png" alt="проект" width="45" height="57"></div>
+                  <div class="swiper-slide project__slide"><img src="images/project/project-3.png" alt="проект" width="115" height="21"></div>
+                  <div class="swiper-slide project__slide project__slide--4"><img src="images/project/project-4.png" alt="проект" width="59" height="41"></div>
+                  <div class="swiper-slide project__slide project__slide--5"><img src="images/project/project-5.png" alt="проект" width="100"></div>
+                  <div class="swiper-slide project__slide"><img src="images/project/project-6.png" alt="проект" width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__inner">
+            <header class="reviews__header container">
+              <h2 class="title reviews__title">отзывы</h2>
+              <div class="swiper-btns">
+                <button class="swiper-button-prev reviews__prev"><span class="visually-hidden">Предыдущий слайд</span>
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-prev"></use>
+                  </svg>
+                </button>
+                <button class="swiper-button-next reviews__next"><span class="visually-hidden">Следующий слайд</span>
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </header>
+            <div class="reviews__slider">
+              <div class="reviews__slider-container swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__img"><img src="images/reviews/reviews-1.png" alt="логотип"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__person">
+                        <p class="reviews__person-name">Красникова Д.В.</p>
+                        <p class="reviews__person-pro">Директор департамента конкурсных процедур ООО «Торговый дом ЛокоТех»</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p>В период с 13.08.2018 по 4.12.2018 ООО «ТендерПро» выступало испонителем работ по нормализации и классификации позиций справочника ТМЦ класса Сырье и материалы для ООО «Торговый дом ЛокоТех».</p>
+                        <p>Было нормализовано и классифицировано 43500 позиций, разработано более 400 шаблонов классов.</p>
+                        <p>По результатам оказания работ отмечаем, что работы были выполнены со всеми требованиями договора. Сотрудники ООО «ТендерПро» проявили высокий профессионализм и умение подстроиться под требования заказчика.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__img"><img src="images/reviews/reviews-2.png" alt="логотип"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__person">
+                        <p class="reviews__person-name">Васютинский В.Ю.</p>
+                        <p class="reviews__person-pro">Начальник отдела НСИ 3-го Московского филиала ООО «АНТ-Информ»</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p>
+                          ООО «ТендерПро», работая в 2012-2013 гг на ООО «АНТ-Информ», принимало активное участие в работах по созданию Единого нормализованного справочника Материально технических ресурсов (МТР), энергетических компаний группы «Газпром», классифицированного по eOTD ECCMA и зарекомендовала себя как исполнительная, высококвалифицированная организация.
+                          
+                        </p>
+                        <p>Работы выполнялись качественно и в срок. За время проведения работ претензий к фирме не было. Хочется отметить эффективную работу специалистов и оперативность выполнения заданий, внимательное отношение к заказчику.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__img"><img src="images/reviews/reviews-3.png" alt="логотип"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__person">
+                        <p class="reviews__person-name">Мотулева Н.Г.</p>
+                        <p class="reviews__person-pro">Директор департамента закупок и снабжения ООО «Торговый дом «Солнечные Продукты»</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p>
+                          За 3 месяца было обработано 60 000 позиций. За это время специалисты ООО «ТендерПро» показали свою высокую способность. Они с полной ответственностью подходят к поставленным задачам. Все работы были выполнены качественно и в срок.
+                          
+                        </p>
+                        <p>
+                          Отличительной чертой работы ООО «ТендерПро» является высокий профессионализм, организованность сотрудников компании и сильный командный дух.
+                          
+                        </p>
+                        <p>Рекомендуем ООО «ТендерПро» как надежного и стабильного делового партнера.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__img"><img src="images/reviews/reviews-1.png" alt="логотип"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__person">
+                        <p class="reviews__person-name">Красникова Д.В.</p>
+                        <p class="reviews__person-pro">Директор департамента конкурсных процедур ООО «Торговый дом ЛокоТех»</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p>В период с 13.08.2018 по 4.12.2018 ООО «ТендерПро» выступало испонителем работ по нормализации и классификации позиций справочника ТМЦ класса Сырье и материалы для ООО «Торговый дом ЛокоТех».</p>
+                        <p>Было нормализовано и классифицировано 43500 позиций, разработано более 400 шаблонов классов.</p>
+                        <p>По результатам оказания работ отмечаем, что работы были выполнены со всеми требованиями договора. Сотрудники ООО «ТендерПро» проявили высокий профессионализм и умение подстроиться под требования заказчика.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__img"><img src="images/reviews/reviews-2.png" alt="логотип"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__person">
+                        <p class="reviews__person-name">Васютинский В.Ю.</p>
+                        <p class="reviews__person-pro">Начальник отдела НСИ 3-го Московского филиала ООО «АНТ-Информ»</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p>
+                          ООО «ТендерПро», работая в 2012-2013 гг на ООО «АНТ-Информ», принимало активное участие в работах по созданию Единого нормализованного справочника Материально технических ресурсов (МТР), энергетических компаний группы «Газпром», классифицированного по eOTD ECCMA и зарекомендовала себя как исполнительная, высококвалифицированная организация.
+                          
+                        </p>
+                        <p>Работы выполнялись качественно и в срок. За время проведения работ претензий к фирме не было. Хочется отметить эффективную работу специалистов и оперативность выполнения заданий, внимательное отношение к заказчику.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__img"><img src="images/reviews/reviews-3.png" alt="логотип"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__person">
+                        <p class="reviews__person-name">Мотулева Н.Г.</p>
+                        <p class="reviews__person-pro">Директор департамента закупок и снабжения ООО «Торговый дом «Солнечные Продукты»</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p>
+                          За 3 месяца было обработано 60 000 позиций. За это время специалисты ООО «ТендерПро» показали свою высокую способность. Они с полной ответственностью подходят к поставленным задачам. Все работы были выполнены качественно и в срок.
+                          
+                        </p>
+                        <p>
+                          Отличительной чертой работы ООО «ТендерПро» является высокий профессионализм, организованность сотрудников компании и сильный командный дух.
+                          
+                        </p>
+                        <p>Рекомендуем ООО «ТендерПро» как надежного и стабильного делового партнера.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts sec">
+          <div class="contacts__inner">
+            <h2 class="title contacts__title container">Контакты</h2>
+            <div class="contacts__sec">
+              <ul class="contacts__list container">
+                <li class="contacts__item">
+                  <div class="contacts__photo"><img src="images/contacts/contacts-1.jpg" alt="фотография" width="72"></div>
+                  <div class="contacts__info">
+                    <div class="contacts__top">
+                      <p class="contacts__name">Титоренко Ирина</p>
+                      <p class="contacts__pro">Руководитель отдела каталогизации</p>
+                    </div>
+                    <ul class="contacts__feedback">
+                      <li><a class="contacts__btn" href="tel:+74952151438">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-tel"></use>
+                          </svg><span>+7 (495) 215-14-38</span></a></li>
+                      <li><a class="contacts__btn" href="tel:+79276080228">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-mob"></use>
+                          </svg><span>+7 (927) 608-02-28</span></a></li>
+                      <li><a class="contacts__btn" href="mailto:catalog4@tender.pro">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-mail"></use>
+                          </svg><span>catalog4@tender.pro</span></a></li>
+                      <li><a class="contacts__btn contacts__btn--skype" href="Skype:rosindora?chat">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-skype"></use>
+                          </svg><span>rosindora</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__photo"><img src="images/contacts/contacts-2.jpg" alt="фотография" width="72"></div>
+                  <div class="contacts__info">
+                    <div class="contacts__top">
+                      <p class="contacts__name">Афанасьева Любовь</p>
+                      <p class="contacts__pro">Зам. руководителя отдела каталогизации</p>
+                    </div>
+                    <ul class="contacts__feedback">
+                      <li><a class="contacts__btn" href="tel:+74952151438">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-tel"></use>
+                          </svg><span>+7 (495) 215-14-38</span></a></li>
+                      <li><a class="contacts__btn" href="tel:+79277586919">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-mob"></use>
+                          </svg><span>+7 (927) 758-69-19</span></a></li>
+                      <li><a class="contacts__btn" href="mailto:ctlg3@tender.pro">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-mail"></use>
+                          </svg><span>ctlg3@tender.pro</span></a></li>
+                      <li><a class="contacts__btn contacts__btn--skype" href="Skype:alubov6?chat">
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-skype"></use>
+                          </svg><span>alubov6</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="contacts__bottom"><a class="btn contacts__send" href="#">отправить сообщение</a></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner container">
+          <div class="footer__top"><a class="footer__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="102"></a>
+            <ul class="footer__contacts">
+              <li><a href="tel:+74952151438">+7 (495) 215-14-38</a></li>
+              <li><a href="mailto:client@tender.pro">client@tender.pro</a></li>
+            </ul>
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li><a href="#">Процедуры</a></li>
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Новости</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li><a href="#">Справка</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li><a href="#">Организаторам</a></li>
+                <li><a href="#">Участникам</a></li>
+                <li><a href="#">О системе</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Реквизиты</a></li>
+              </ul>
+            </nav>
+            <ul class="footer__user">
+              <li><a href="#">Вход</a></li>
+              <li><a href="#">Регистрация</a></li>
+              <li><a href="#">Написать <br> в поддержку</a></li>
+            </ul>
+            <address class="footer__address">
+              <p>141707 г. Долгопрудный, МО, проспект Пацаева, д. 7, корп. 1, оф. 43</p>
+            </address>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__docs"><a href="#">Политика конфиденциальности</a>
+              <p>ООО «ТендерПро»  Все права защищены и лицензированы</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

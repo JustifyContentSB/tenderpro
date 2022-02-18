@@ -1,0 +1,28 @@
+header.header
+    .header__inner.container
+        button.header__burger.header__btn
+            span.visually-hidden Открыть навигационное меню
+            img(src="images/icons/menu.svg", alt="иконка меню" width="20" height="20")
+        a.header__logo(href="#")
+            img(src="images/icons/logo.svg", alt="логотип" width="100" height="24")
+        form.header__form(action="#")
+            input.header__form-field(type="text" placeholder="Искать конкурсы, товары, компании")
+            button.header__form-btn.header__btn
+                svg
+                    use(href="images/sprites/main.stack.svg#svg-search")
+        nav.header__nav
+            ul.header__nav-list
+                li
+                    a(href="#") о компании
+                li
+                    a(href="#") справка
+                li
+                    a(href="#") тарифы
+                li
+                    a(href="#") контакты
+        a.header__apps.header__btn(href="#")
+            span.visually-hidden Открыть меню приложений
+            img(src="images/icons/apps.svg", alt="иконка приложений" width="20" height="20")
+        ul.header__user
+            li.header__user-item
+                a.header__user-login(href="#") Войти

@@ -1,0 +1,287 @@
+extends base/_layout
+block head
+    title Главная
+block page
+    section.primary
+        .primary__bg.background-image
+            picture
+                source(srcset="images/primary/primary-1-big.webp" media="(min-width: 1600px)" type="image/webp")
+                source(srcset="images/primary/primary-1-big.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                source(srcset="images/primary/primary-1-desk.webp" media="(min-width: 1000px)" type="image/webp")
+                source(srcset="images/primary/primary-1-desk.jpg" media="(min-width: 1000px)" type="image/jpeg")
+                source(srcset="images/primary/primary-1-tab.webp" media="(min-width: 768px)" type="image/webp")
+                source(srcset="images/primary/primary-1-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                source(srcset="images/primary/primary-1-mob.webp" type="image/webp")
+                img(src="images/primary/primary-1-mob.jpg" alt="Фоновое изображение" width="320" height="568")
+        .primary__inner
+            .breadcrumbs.primary__breadcrumbs.container
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a(href="#") Главная
+                    li.breadcrumbs__item
+                        a(href="#") NSI
+            .primary__info.sec.container
+                h1.main-title.primary__title Качество основных данных под контролем
+                a.btn.primary__btn(href="#") Получить презентацию
+
+    section.about.sec
+        .about__inner.container
+            h2.title.about__title Проблема
+            .about__info
+                h3.sub-title.about__sub-title Некачественные данные
+                ul.about__list.problem
+                    li.about__item.problem__item.
+                        Вызывают несогласованность при работе в различных информационных системах
+                    li.about__item.problem__item.
+                        Ведут к увеличению складов и росту неликвидов
+                    li.about__item.problem__item.
+                        Требуют многократный ввод одинаковой информации
+                    li.about__item.problem__item.
+                        Повышают транзакционные издержки на выверку данных
+                    li.about__item.problem__item.
+                        Не позволяют консолидировать закупки
+                    li.about__item.problem__item.
+                        Препятствуют работе с контрагентами
+                    li.about__item.problem__item.
+                        Уменьшают достоверность аналитики и отчетности
+
+    section.catalog.sec
+        .catalog__inner.container
+            header.catalog__header
+                h2.title.catalog__title Каталогизация
+            .catalog__info
+                p.
+                    Каталогизация материально-технических ресурсов (МТР) — совокупность процессов (идентификация, описание, классификация, унификация, кодификация), обеспечивающих единообразное и однозначное описание МТР.
+                p.
+                    Каталогизация продукции является эффективным способом упорядочения процессов материально- технического снабжения и сокращения затрат на приобретение продукции, позволяет исключить закупку дублирующей продукции и необоснованное завышение цен.
+
+    section.about.sec
+        .about__inner.container
+            h2.title.about__title Решение
+            .about__info
+                h3.sub-title.about__sub-title Центр каталогизации ГК ТендерПро готов создать каталог продукции предприятия с нуля или обработать уже имеющийся справочник
+                ul.about__list.decision
+                    li.about__item.decision__item.
+                        Разработка методики нормализации данных индивидуально по требованиям заказчика
+                    li.about__item.decision__item.
+                        Аутсорсинг ведения справочника
+                    li.about__item.decision__item.
+                        Разработка корпоративных классификаторов продукции, услуг
+                    li.about__item.decision__item.
+                        Выполнение работ по нормализации и классификации справочника заказчика
+                    li.about__item.decision__item.
+                        Разработка шаблонов описания МТР
+                    li.about__item.decision__item.
+                        Перевод на английский язык наименований позиций, а так же их свойств и значений
+
+    section.features
+        .features__inner
+            header.features__header.sec.container
+                h2.title наш подход
+            ul.features__list
+                li.features__item.container
+                    img.features__icon(src="images/features/features-1.svg" alt="иконка" width="24" height="24")
+                    p.features__text Высокое качество, сжатые сроки, приемлемая цена
+                li.features__item.container
+                    img.features__icon(src="images/features/features-2.svg" alt="иконка" width="24" height="24")
+                    p.features__text Создание методик работы индивидуально под ваш проект
+                li.features__item.container
+                    img.features__icon(src="images/features/features-3.svg" alt="иконка" width="24" height="24")
+                    p.features__text Профессионализм #[br] и богатый опыт
+
+    section.project.sec
+        .project__inner
+            header.project__header.container
+                h2.title.project__title наши проекты
+                .swiper-btns
+                    button.swiper-button-prev.project__prev
+                        span.visually-hidden Предыдущий слайд
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-prev")
+                    button.swiper-button-next.project__next
+                        span.visually-hidden Следующий слайд
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-next")
+            .project__slider
+                .swiper-container.project__slider-container
+                    .swiper-wrapper
+                        .swiper-slide.project__slide
+                            img(src="images/project/project-1.png" alt="проект" width="91" height="23")
+                        .swiper-slide.project__slide
+                            img(src="images/project/project-2.png" alt="проект" width="45" height="57")
+                        .swiper-slide.project__slide
+                            img(src="images/project/project-3.png" alt="проект" width="115" height="21")
+                        .swiper-slide.project__slide.project__slide--4
+                            img(src="images/project/project-4.png" alt="проект" width="59" height="41")
+                        .swiper-slide.project__slide.project__slide--5
+                            img(src="images/project/project-5.png" alt="проект" width="100")
+                        .swiper-slide.project__slide
+                            img(src="images/project/project-6.png" alt="проект" width="80")
+
+    section.reviews
+        .reviews__inner
+            header.reviews__header.container
+                h2.title.reviews__title отзывы
+                .swiper-btns
+                    button.swiper-button-prev.reviews__prev
+                        span.visually-hidden Предыдущий слайд
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-prev")
+                    button.swiper-button-next.reviews__next
+                        span.visually-hidden Следующий слайд
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-next")
+            .reviews__slider
+                .reviews__slider-container.swiper-container
+                    .swiper-wrapper
+                        .reviews__slide.swiper-slide
+                            .reviews__img
+                                img(src="images/reviews/reviews-1.png", alt="логотип")
+                            .reviews__info
+                                .reviews__person
+                                    p.reviews__person-name Красникова Д.В.
+                                    p.reviews__person-pro Директор департамента конкурсных процедур ООО «Торговый дом ЛокоТех»
+                                .reviews__text
+                                    p.
+                                        В период с 13.08.2018 по 4.12.2018 ООО «ТендерПро» выступало испонителем работ по нормализации и классификации позиций справочника ТМЦ класса Сырье и материалы для ООО «Торговый дом ЛокоТех».
+                                    p.
+                                        Было нормализовано и классифицировано 43500 позиций, разработано более 400 шаблонов классов.
+                                    p.
+                                        По результатам оказания работ отмечаем, что работы были выполнены со всеми требованиями договора. Сотрудники ООО «ТендерПро» проявили высокий профессионализм и умение подстроиться под требования заказчика.
+                        .reviews__slide.swiper-slide
+                            .reviews__img
+                                img(src="images/reviews/reviews-2.png", alt="логотип")
+                            .reviews__info
+                                .reviews__person
+                                    p.reviews__person-name Васютинский В.Ю.
+                                    p.reviews__person-pro Начальник отдела НСИ 3-го Московского филиала ООО «АНТ-Информ»
+                                .reviews__text
+                                    p.
+                                        ООО «ТендерПро», работая в 2012-2013 гг на ООО «АНТ-Информ», принимало активное участие в работах по созданию Единого нормализованного справочника Материально технических ресурсов (МТР), энергетических компаний группы «Газпром», классифицированного по eOTD ECCMA и зарекомендовала себя как исполнительная, высококвалифицированная организация.
+
+                                    p.
+                                        Работы выполнялись качественно и в срок. За время проведения работ претензий к фирме не было. Хочется отметить эффективную работу специалистов и оперативность выполнения заданий, внимательное отношение к заказчику.
+                        .reviews__slide.swiper-slide
+                            .reviews__img
+                                img(src="images/reviews/reviews-3.png", alt="логотип")
+                            .reviews__info
+                                .reviews__person
+                                    p.reviews__person-name Мотулева Н.Г.
+                                    p.reviews__person-pro Директор департамента закупок и снабжения ООО «Торговый дом «Солнечные Продукты»
+                                .reviews__text
+                                    p.
+                                        За 3 месяца было обработано 60 000 позиций. За это время специалисты ООО «ТендерПро» показали свою высокую способность. Они с полной ответственностью подходят к поставленным задачам. Все работы были выполнены качественно и в срок.
+
+                                    p.
+                                        Отличительной чертой работы ООО «ТендерПро» является высокий профессионализм, организованность сотрудников компании и сильный командный дух.
+
+                                    p.
+                                        Рекомендуем ООО «ТендерПро» как надежного и стабильного делового партнера.
+                        .reviews__slide.swiper-slide
+                            .reviews__img
+                                img(src="images/reviews/reviews-1.png", alt="логотип")
+                            .reviews__info
+                                .reviews__person
+                                    p.reviews__person-name Красникова Д.В.
+                                    p.reviews__person-pro Директор департамента конкурсных процедур ООО «Торговый дом ЛокоТех»
+                                .reviews__text
+                                    p.
+                                        В период с 13.08.2018 по 4.12.2018 ООО «ТендерПро» выступало испонителем работ по нормализации и классификации позиций справочника ТМЦ класса Сырье и материалы для ООО «Торговый дом ЛокоТех».
+                                    p.
+                                        Было нормализовано и классифицировано 43500 позиций, разработано более 400 шаблонов классов.
+                                    p.
+                                        По результатам оказания работ отмечаем, что работы были выполнены со всеми требованиями договора. Сотрудники ООО «ТендерПро» проявили высокий профессионализм и умение подстроиться под требования заказчика.
+                        .reviews__slide.swiper-slide
+                            .reviews__img
+                                img(src="images/reviews/reviews-2.png", alt="логотип")
+                            .reviews__info
+                                .reviews__person
+                                    p.reviews__person-name Васютинский В.Ю.
+                                    p.reviews__person-pro Начальник отдела НСИ 3-го Московского филиала ООО «АНТ-Информ»
+                                .reviews__text
+                                    p.
+                                        ООО «ТендерПро», работая в 2012-2013 гг на ООО «АНТ-Информ», принимало активное участие в работах по созданию Единого нормализованного справочника Материально технических ресурсов (МТР), энергетических компаний группы «Газпром», классифицированного по eOTD ECCMA и зарекомендовала себя как исполнительная, высококвалифицированная организация.
+
+                                    p.
+                                        Работы выполнялись качественно и в срок. За время проведения работ претензий к фирме не было. Хочется отметить эффективную работу специалистов и оперативность выполнения заданий, внимательное отношение к заказчику.
+                        .reviews__slide.swiper-slide
+                            .reviews__img
+                                img(src="images/reviews/reviews-3.png", alt="логотип")
+                            .reviews__info
+                                .reviews__person
+                                    p.reviews__person-name Мотулева Н.Г.
+                                    p.reviews__person-pro Директор департамента закупок и снабжения ООО «Торговый дом «Солнечные Продукты»
+                                .reviews__text
+                                    p.
+                                        За 3 месяца было обработано 60 000 позиций. За это время специалисты ООО «ТендерПро» показали свою высокую способность. Они с полной ответственностью подходят к поставленным задачам. Все работы были выполнены качественно и в срок.
+
+                                    p.
+                                        Отличительной чертой работы ООО «ТендерПро» является высокий профессионализм, организованность сотрудников компании и сильный командный дух.
+
+                                    p.
+                                        Рекомендуем ООО «ТендерПро» как надежного и стабильного делового партнера.
+                .swiper-pagination
+
+    section.contacts.sec
+        .contacts__inner
+            h2.title.contacts__title.container Контакты
+            .contacts__sec
+                ul.contacts__list.container
+                    li.contacts__item
+                        .contacts__photo
+                            img(src="images/contacts/contacts-1.jpg", alt="фотография" width="72")
+                        .contacts__info
+                            .contacts__top
+                                p.contacts__name Титоренко Ирина
+                                p.contacts__pro Руководитель отдела каталогизации
+                            ul.contacts__feedback
+                                li
+                                    a.contacts__btn(href="tel:+74952151438")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-tel")
+                                        span +7 (495) 215-14-38
+                                li
+                                    a.contacts__btn(href="tel:+79276080228")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-mob")
+                                        span +7 (927) 608-02-28
+                                li
+                                    a.contacts__btn(href="mailto:catalog4@tender.pro")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-mail")
+                                        span catalog4@tender.pro
+                                li
+                                    a.contacts__btn.contacts__btn--skype(href="Skype:rosindora?chat")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-skype")
+                                        span rosindora
+                    li.contacts__item
+                        .contacts__photo
+                            img(src="images/contacts/contacts-2.jpg", alt="фотография" width="72")
+                        .contacts__info
+                            .contacts__top
+                                p.contacts__name Афанасьева Любовь
+                                p.contacts__pro Зам. руководителя отдела каталогизации
+                            ul.contacts__feedback
+                                li
+                                    a.contacts__btn(href="tel:+74952151438")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-tel")
+                                        span +7 (495) 215-14-38
+                                li
+                                    a.contacts__btn(href="tel:+79277586919")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-mob")
+                                        span +7 (927) 758-69-19
+                                li
+                                    a.contacts__btn(href="mailto:ctlg3@tender.pro")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-mail")
+                                        span ctlg3@tender.pro
+                                li
+                                    a.contacts__btn.contacts__btn--skype(href="Skype:alubov6?chat")
+                                        svg
+                                            use(href="images/sprites/main.stack.svg#svg-skype")
+                                        span alubov6
+                .contacts__bottom
+                    a.btn.contacts__send(href="#") отправить сообщение

@@ -1,0 +1,39 @@
+.catalog
+   background: $secBg
+   color: #fff
+   &__title
+      margin-bottom: 24px
+      color: #fff
+   &__info
+      p
+         margin-bottom: 16px
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: 768px)
+   .catalog
+      &__inner
+         display: flex
+         justify-content: space-between
+      &__info
+         width: 100%
+         max-width: 360px
+
+@media screen and (min-width: 1000px)
+   .catalog
+      &__info
+         width: 70%
+         max-width: 540px
+
+@media screen and (min-width: 1440px)
+   .catalog
+      padding-top: 83px
+      &__inner
+         margin: 0
+         max-width: 1292px
+
+@media screen and (min-width: 1600px)
+   .catalog
+      &__inner
+         max-width: 1534px
+         margin-left: calc((100% - 1920px)/2)

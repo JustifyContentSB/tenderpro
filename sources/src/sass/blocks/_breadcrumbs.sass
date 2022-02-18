@@ -1,0 +1,42 @@
+.breadcrumbs
+   padding-top: 12px
+   padding-bottom: 12px
+   font-size: 12px
+   line-height: 133%
+   color: #fff
+   border-bottom: 1px solid rgba(#fff, 0.1)
+   &__list
+      display: flex
+      align-items: center
+   &__item
+      &:not(:last-child)
+         padding-right: 12px
+         position: relative
+         &::after
+            content: ''
+            position: absolute
+            width: 12px
+            height: 12px
+            background: url('../images/icons/arrow-right.svg') no-repeat center / contain
+      &:last-child
+         color: rgba(#fff, 0.6)
+
+@media screen and (min-width: 768px)
+   .breadcrumbs
+      padding-top: 20px
+      padding-bottom: 20px
+      font-size: 14px
+      line-height: 143%
+      max-width: 100%
+      &__list
+         width: 100%
+         max-width: 1856px
+         margin: 0 auto
+      &__item
+         margin-right: 4px
+         &:not(:last-child)
+            padding-right: 20px
+            &::after
+               width: 16px
+               height: 16px
+               right: 0

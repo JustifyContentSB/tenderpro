@@ -1,0 +1,59 @@
+.project
+   background: $secBg
+   color: #fff
+   &__header
+      margin-bottom: 40px
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__title
+      color: #fff
+   &__slider
+      overflow: hidden
+      padding: 0 16px
+   &__slide
+      width: auto
+      min-height: 57px
+      display: flex
+      align-items: center
+      &--4, &--5
+         padding-bottom: 10px
+      img
+         display: block
+
+@media screen and (min-width: 768px)
+   .project
+      padding-bottom: 106px
+      &__header
+         margin-bottom: 50px
+      &__slider
+         padding: 0 24px
+      &__slide
+         min-height: 73px
+         &--4, &--5
+            padding-bottom: 20px
+         img
+            width: 100%
+
+@media screen and (min-width: 1280px)
+   .project
+      .swiper
+         &-btns
+            display: none
+         &-wrapper
+            display: flex
+            justify-content: space-between
+      &__slide
+         img
+            width: auto
+
+@media screen and (min-width: 1440px)
+   .project
+      padding-bottom: 75px
+      &__header
+         margin-bottom: 58px
+      &__slider
+         padding: 0 32px
+         width: 100%
+         max-width: 1920px
+         margin: 0 auto

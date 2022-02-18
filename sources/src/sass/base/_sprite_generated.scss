@@ -1,0 +1,214 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-svg-mail {
+	@extend %svg-common;
+	background-position: 55% 0;
+	background-size: math.div(58, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-mail {
+	background-position: 55% 0;
+}
+@mixin svg-svg-mail-hover {
+	.svg-svg-mail {
+		@include svg-pos-svg-mail-hover
+	}
+}
+
+.svg-svg-mail:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-mail-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-mob {
+	@extend %svg-common;
+	background-position: 0 61.111111111111114%;
+	background-size: math.div(58, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-mob {
+	background-position: 0 61.111111111111114%;
+}
+@mixin svg-svg-mob-hover {
+	.svg-svg-mob {
+		@include svg-pos-svg-mob-hover
+	}
+}
+
+.svg-svg-mob:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-mob-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-next {
+	@extend %svg-common;
+	background-position: 45% 61.111111111111114%;
+	background-size: math.div(58, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-next {
+	background-position: 45% 61.111111111111114%;
+}
+@mixin svg-svg-next-hover {
+	.svg-svg-next {
+		@include svg-pos-svg-next-hover
+	}
+}
+
+.svg-svg-next:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-next-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-prev {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(58, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-prev {
+	background-position: 100% 0;
+}
+@mixin svg-svg-prev-hover {
+	.svg-svg-prev {
+		@include svg-pos-svg-prev-hover
+	}
+}
+
+.svg-svg-prev:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-prev-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-search {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(58, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-search {
+	background-position: 0 0;
+}
+@mixin svg-svg-search-hover {
+	.svg-svg-search {
+		@include svg-pos-svg-search-hover
+	}
+}
+
+.svg-svg-search:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-search-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-skype {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(58, 14)*100% auto;
+	width: 14px;
+
+}
+@mixin svg-pos-svg-skype {
+	background-position: 0 100%;
+}
+@mixin svg-svg-skype-hover {
+	.svg-svg-skype {
+		@include svg-pos-svg-skype-hover
+	}
+}
+
+.svg-svg-skype:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(14, 14)*100%;
+}
+
+.svg-svg-skype-dims {
+	width: 14px;
+	height: 14px;
+}
+
+.svg-svg-tel {
+	@extend %svg-common;
+	background-position: 100% 50%;
+	background-size: math.div(58, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-tel {
+	background-position: 100% 50%;
+}
+@mixin svg-svg-tel-hover {
+	.svg-svg-tel {
+		@include svg-pos-svg-tel-hover
+	}
+}
+
+.svg-svg-tel:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-tel-dims {
+	width: 18px;
+	height: 18px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }

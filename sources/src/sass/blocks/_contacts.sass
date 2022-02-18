@@ -1,0 +1,142 @@
+.contacts
+   padding: 46px 0 44px
+   background: #232630
+   color: #fff
+   &__title
+      margin-bottom: 26px
+      color: #fff
+      font-size: 30px
+   &__list
+      margin-bottom: 38px
+      padding-top: 24px
+      padding-bottom: 28px
+      border-top: 1px solid #444857
+      border-bottom: 1px solid #444857
+      position: relative
+      &::after
+         padding: 16px
+         content: 'Напишите нам'
+         position: absolute
+         bottom: -26px
+         left: 50%
+         transform: translateX(-50%)
+         color: rgba(#fff, 0.6)
+         background: $secBg
+   &__item
+      margin-bottom: 16px
+      display: flex
+      &:last-child
+         margin-bottom: 0
+   &__photo
+      width: 64px
+      min-width: 64px
+      height: 64px
+      margin-right: 16px
+      border-radius: 50%
+      overflow: hidden
+      img
+         width: 100%
+   &__top
+      margin-bottom: 13px
+   &__name
+      font-weight: bold
+      font-size: 20px
+      line-height: 160%
+      text-transform: uppercase
+      font-family: $robotoCond
+   &__pro
+      color: rgba(#fff, 0.6)
+   &__btn
+      display: flex
+      align-items: center
+      svg
+         width: 18px
+         height: 18px
+         margin-right: 8px
+      &--skype
+         svg
+            width: 18px
+            height: 16px
+   &__feedback
+      li
+         margin-bottom: 8px
+   &__bottom
+      display: flex
+      justify-content: center
+   &__send
+      width: calc(100% - 32px)
+      margin: 0 auto
+
+@media screen and (min-width: 768px)
+   .contacts
+      padding: 52px 0 62px
+      &__title
+         margin-bottom: 44px
+      &__list
+         display: flex
+         flex-wrap: wrap
+         padding-top: 0
+         padding-bottom: 0
+      &__item
+         width: 50%
+         margin-bottom: 0
+         padding-top: 25px
+         padding-bottom: 53px
+         &:nth-child(2n)
+            padding-left: 25px
+            border-left: 1px solid #444857
+      &__top
+         margin-bottom: 10px
+      &__info
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+      &__feedback
+         margin-top: auto
+         li
+            &:last-child
+               margin-bottom: 0
+      &__bottom
+         padding-bottom: 22px
+         border-bottom: 1px solid #444857
+      &__send
+         width: auto
+
+@media screen and (min-width: 1280px)
+   .contacts
+      &__title
+         font-size: 32px
+
+@media screen and (min-width: 1440px)
+   .contacts
+      padding: 90px 0 80px
+      &__title
+         font-size: 36px
+         line-height: 122%
+      &__list
+         width: calc(100% - 64px)
+         max-width: 1856px
+         margin: 0 auto
+         border-left: 1px solid #444857
+         border-right: 1px solid #444857
+         &::after
+            bottom: -32px
+      &__item
+         padding-top: 32px
+         padding-bottom: 56px
+         &:nth-child(2n)
+            padding-left: 30px
+      &__photo
+         width: 112px
+         height: 112px
+         margin-right: 24px
+      &__top
+         margin-bottom: 18px
+      &__bottom
+         width: calc(100% - 64px)
+         max-width: 1856px
+         margin: 0 auto
+         padding-top: 40px
+         padding-bottom: 29px
+         border: 1px solid #444857
+         border-top: none

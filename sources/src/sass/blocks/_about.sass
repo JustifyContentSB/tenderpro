@@ -1,0 +1,56 @@
+.about
+   &__title
+      margin-bottom: 24px
+   &__sub-title
+      margin-bottom: 16px
+   &__list
+      font-size: 14px
+      line-height: 143%
+   &__item
+      margin-bottom: 18px
+      &:last-child
+         margin-bottom: 0
+
+@media screen and (min-width: 768px)
+   .about
+      &__inner
+         display: flex
+         justify-content: space-between
+         align-items: flex-start
+      &__title
+         margin-bottom: 0
+      &__info
+         width: 360px
+      &__sub-title
+         margin-bottom: 18px
+      &__item
+         margin-bottom: 19px
+
+@media screen and (min-width: 1000px)
+   .about
+      &__info
+         width: 70%
+         max-width: 540px
+
+@media screen and (min-width: 1440px)
+   .about
+      padding-bottom: 85px
+      &__inner
+         max-width: 1292px
+         margin: 0
+      &__sub-title
+         margin-bottom: 25px
+      &__info
+         padding-right: 20px
+      &__list
+         padding-right: 50px
+
+@media screen and (min-width: 1600px)
+   .about
+      &__inner
+         max-width: 1534px
+
+@media screen and (min-width: 1900px)
+   .about
+      &__inner
+         margin-left: calc((100% - 1920px)/2)

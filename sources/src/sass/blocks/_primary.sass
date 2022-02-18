@@ -1,0 +1,50 @@
+.primary
+   min-height: 568px
+   position: relative
+   background: #767069
+   overflow: hidden
+   &__inner
+      position: relative
+      z-index: 5
+   &__info
+      max-width: 320px
+      margin: 0
+   &__title
+      margin-bottom: 20px
+   &__btn
+      width: 100%
+
+@media screen and (min-width: 768px)
+   .primary
+      min-height: 688px
+      &__info
+         padding-top: 88px
+         width: 100%
+         max-width: 768px
+         margin: 0 auto
+      &__title
+         margin-bottom: 40px
+      &__btn
+         width: auto
+
+@media screen and (min-width: 1280px)
+   .primary
+      min-height: 600px
+
+@media screen and (min-width: 1440px)
+   .primary
+      &__info
+         max-width: 897px
+         margin: 0
+         margin-left: 150px
+
+@media screen and (min-width: 1900px)
+   .primary
+      &__inner
+         width: 100%
+         margin: 0 auto
+      &__info
+         padding-left: 245px
+         margin-left: calc((100% - 1920px)/2)
+         width: 100%
+         max-width: 1104px

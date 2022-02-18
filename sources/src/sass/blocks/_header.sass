@@ -1,0 +1,137 @@
+.header
+   position: fixed
+   top: 0
+   left: 0
+   right: 0
+   z-index: 1000
+   background: #fff
+   border-bottom: 1px solid #f3f3f3
+   &__inner
+      min-height: 40px
+      padding-top: 8px
+      padding-bottom: 8px
+      display: flex
+      align-items: center
+   &__burger
+      margin-right: 12px
+   &__logo
+      margin-right: auto
+      img
+         display: block
+         width: 100%
+   &__form
+      margin-right: 12px
+      &-field
+         width: 100%
+         padding: 10px 12px
+         display: none
+         background: #F3F3F3
+         border: none
+         font-size: 14px
+         line-height: 143%
+         color: $accent
+      &-btn
+         svg
+            fill: $accent
+   &__btn
+      width: 20px
+      min-width: 20px
+      height: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+         width: 100%
+   &__apps
+      margin-right: 12px
+   &__user
+      padding-top: 3px
+      &-item
+         font-size: 11px
+         line-height: 182%
+         letter-spacing: 0.3px
+         text-transform: uppercase
+         font-family: $robotoCond
+         font-weight: bold
+         & + .header__user-item
+            margin-left: 12px
+   &__nav
+      display: none
+      font-family: $robotoCond
+      font-weight: bold
+      font-size: 13px
+      line-height: 154%
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      a
+         &:hover,
+         &:focus
+            text-decoration: underline
+
+@media screen and (min-width: 768px)
+   .header
+      &__inner
+         min-height: 80px
+      &__btn
+         width: 24px
+         height: 24px
+      &__burger
+         margin-right: 24px
+      &__logo
+         width: 168px
+      &__form
+         margin-right: 24px
+      &__apps
+         margin-right: 24px
+      &__user
+         &-item
+            font-size: 13px
+
+@media screen and (min-width: 1280px)
+   .header
+      &__burger
+         display: none
+      &__nav
+         margin-right: 40px
+         display: block
+         &-list
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            li
+               margin-right: 36px
+               &:last-child
+                  margin-right: 0
+      &__form
+         flex-grow: 1
+         max-width: 453px
+         margin-left: 40px
+         margin-right: 40px
+         position: relative
+         &-btn
+            position: absolute
+            right: 18px
+            top: 50%
+            transform: translateY(-50%)
+            svg
+               fill: #969595
+         &-field
+            display: block
+            padding: 12px 20px
+            padding-right: 50px
+
+@media screen and (min-width: 1440px)
+   .header
+      &__apps
+         margin-right: 60px
+      &__nav
+         margin-right: 60px
+      &__form
+         margin-left: 60px
+         margin-right: 60px
+
+@media screen and (min-width: 1600px)
+   .header
+      &__form
+         max-width: 720px
+         margin-right: 156px
